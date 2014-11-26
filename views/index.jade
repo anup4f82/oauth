@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= title
+    a(href="/oauth/auth") Log In with Salesforce
+    p Access Token: #{session.accessToken}
+    p Refresh Token: #{session.refreshToken}
+    p Instance URL: #{session.instanceUrl}
+    p User ID: #{session.userid}
+    p Org ID: #{session.orgid}
+    a(href="/create") Create Customer Setting Record
+    p RecordID: #{session.recordid}
